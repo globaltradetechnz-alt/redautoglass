@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>玻璃询价 — 在线提交需求 | Red Auto Glass 红色汽车玻璃</title>
+<meta name="description" content="在线提交汽车玻璃询价：告诉我们您的车型和需求，Red Auto Glass 中文客服尽快联系您报价。当天上门服务，电话 0800 757-985。">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%23C8102E'/><text x='50' y='68' font-size='52' text-anchor='middle' fill='white' font-family='Arial' font-weight='bold'>R</text></svg>">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="topbar">
+  <div class="container">
+    <div>🇨🇳 中文服务 · 服务奥克兰华人社区 · 全年无休</div>
+    <div class="tb-right">
+      <span>🕐 营业时间：每天早上7点 – 晚上11点（7天营业）</span>
+      <a href="tel:0800757985">📞 0800 757-985</a>
+    </div>
+  </div>
+</div>
+
+<nav class="nav">
+  <div class="container">
+    <a href="index.html" class="logo">
+      <div class="logo-mark">R</div>
+      <div class="logo-text">
+        <div class="en">RED AUTO GLASS</div>
+        <div class="cn">红色汽车玻璃 · 奥克兰华人专家</div>
+      </div>
+    </a>
+    <div class="nav-links">
+      <a href="index.html">首页</a>
+      <a href="about.html">关于我们</a>
+      <a href="services.html">服务项目</a>
+      <a href="insurance.html">保险理赔</a>
+      <a href="enquiry.html" class="active">玻璃询价</a>
+    </div>
+    <div style="display:flex;align-items:center;gap:12px;">
+      <a href="tel:0800757985" class="nav-phone"><span class="pulse"></span><span class="num">0800 757-985</span><span style="font-size:14px;">立即拨打</span></a>
+      <button class="hamburger" aria-label="菜单">☰</button>
+    </div>
+  </div>
+</nav>
+
+<header class="page-hero">
+  <div class="container">
+    <div class="crumbs"><a href="index.html">首页</a> / 玻璃询价</div>
+    <h1>玻璃询价</h1>
+    <p>填写您的车辆信息和需求，中文客服会尽快与您联系报价。紧急情况请直接致电，通常当天即可上门服务。</p>
+  </div>
+</header>
+
+<section class="section">
+  <div class="container">
+    <div class="contact-grid">
+      <div>
+        <div class="contact-detail">
+          <div class="icon">📞</div>
+          <div><div class="t">电话（最快方式）</div><a class="v" href="tel:0800757985">0800 757-985</a><div class="sub">每天早上7点 – 晚上11点，全年无休</div></div>
+        </div>
+        <div class="contact-detail">
+          <div class="icon">✉️</div>
+          <div><div class="t">电子邮箱</div><a class="v" href="mailto:tiptopautonz@hotmail.com">tiptopautonz@hotmail.com</a></div>
+        </div>
+        <div class="contact-detail">
+          <div class="icon">📍</div>
+          <div>
+            <div class="t">门店地址</div>
+            <div class="v">133 Pilkington Road, Panmure, Auckland 1072</div>
+            <div class="sub">位于马路往里第二栋建筑，Geronimo Performing Arts 对面。请从建筑侧面的 Office &amp; Installation Bay C 入口进入。</div>
+          </div>
+        </div>
+        <div class="contact-detail">
+          <div class="icon">💡</div>
+          <div>
+            <div class="t">温馨提示</div>
+            <div class="v" style="font-size:15px;">报价需要的信息</div>
+            <div class="sub">车辆品牌、型号、年份，以及需要更换的玻璃位置（挡风玻璃 / 侧窗 / 后玻璃 / 天窗）。有车牌号（Rego）我们可以查得更准。</div>
+          </div>
+        </div>
+      </div>
+      <div class="form-card">
+        <h3>在线询价</h3>
+        <p class="sub">带 * 为必填项。提交后中文客服将尽快与您联系。</p>
+        <form id="enquiryForm" novalidate>
+          <div class="form-row">
+            <div class="form-group"><label>您的姓名 <span class="req">*</span></label><input type="text" id="fName" required placeholder="请输入姓名"></div>
+            <div class="form-group"><label>联系电话 <span class="req">*</span></label><input type="tel" id="fPhone" required placeholder="例如：021 000 0000"></div>
+          </div>
+          <div class="form-row">
+            <div class="form-group"><label>电子邮箱</label><input type="email" placeholder="选填"></div>
+            <div class="form-group"><label>所在街区 / 地区</label><input type="text" placeholder="例如：East Tamaki"></div>
+          </div>
+          <div class="form-row">
+            <div class="form-group"><label>车辆（品牌、型号、年份）<span class="req">*</span></label><input type="text" id="fVehicle" required placeholder="例如：丰田 RAV4 2021"></div>
+            <div class="form-group"><label>车牌号（Rego）</label><input type="text" placeholder="例如：ABC123"></div>
+          </div>
+          <div class="form-group">
+            <label>需要更换什么？<span class="req">*</span></label>
+            <div class="radio-group">
+              <label class="radio-pill"><input type="radio" name="glass" checked><span>挡风玻璃</span></label>
+              <label class="radio-pill"><input type="radio" name="glass"><span>侧窗玻璃</span></label>
+              <label class="radio-pill"><input type="radio" name="glass"><span>后玻璃</span></label>
+              <label class="radio-pill"><input type="radio" name="glass"><span>天窗 / 车顶玻璃</span></label>
+              <label class="radio-pill"><input type="radio" name="glass"><span>不确定，请建议</span></label>
+            </div>
+          </div>
+          <div class="form-group">
+            <label>是否走保险理赔？<span class="req">*</span></label>
+            <div class="radio-group">
+              <label class="radio-pill"><input type="radio" name="ins" checked><span>是 — 保险理赔</span></label>
+              <label class="radio-pill"><input type="radio" name="ins"><span>否 — 自费</span></label>
+              <label class="radio-pill"><input type="radio" name="ins"><span>还不确定</span></label>
+            </div>
+          </div>
+          <div class="form-group"><label>保险公司（如已知）</label><input type="text" placeholder="例如：AA Insurance / AMI / State"></div>
+          <div class="form-group"><label>其他补充（方便联系的时间、车辆情况等）</label><textarea rows="3" placeholder="例如：挡风玻璃有裂缝，晚上7点后方便接电话"></textarea></div>
+          <button type="submit" class="btn btn-red" style="width:100%;justify-content:center;">提交询价</button>
+          <p class="form-note">想直接沟通？拨打 <a href="tel:0800757985">0800 757-985</a> —— 当天服务可安排。</p>
+        </form>
+        <div class="form-success" id="formSuccess">
+          <div class="tick">✓</div>
+          <h4>提交成功，<span data-name></span>！</h4>
+          <p>我们已收到您的询价请求，中文客服会尽快与您联系报价。<br>如需加急，请直接拨打 <a href="tel:0800757985" style="color:var(--red);font-weight:800;">0800 757-985</a>。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-logo">
+          <div class="logo-mark">R</div>
+          <div>
+            <div class="en">RED AUTO GLASS</div>
+            <div class="cn">红色汽车玻璃 · 奥克兰华人专家</div>
+          </div>
+        </div>
+        <p class="footer-tagline">奥克兰值得信赖的汽车玻璃专家，37年+行业经验。ADAS 挡风玻璃、全品牌全车型、保险理赔全程代办。全程中文服务，沟通无障碍。</p>
+        <a href="tel:0800757985" class="footer-phone-big">📞 0800 757-985</a>
+      </div>
+      <div>
+        <h4>服务项目</h4>
+        <ul>
+          <li><a href="services.html#adas">ADAS 挡风玻璃</a></li>
+          <li><a href="services.html#windscreen">挡风玻璃更换</a></li>
+          <li><a href="services.html#side-rear">侧窗与后玻璃</a></li>
+          <li><a href="services.html#sunroof">天窗与车顶玻璃</a></li>
+          <li><a href="services.html#tesla">特斯拉玻璃</a></li>
+          <li><a href="services.html#rangerover">揽胜玻璃</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>快速链接</h4>
+        <ul>
+          <li><a href="about.html">关于我们</a></li>
+          <li><a href="insurance.html">保险理赔</a></li>
+          <li><a href="index.html#reviews">客户评价</a></li>
+          <li><a href="index.html#faq">常见问题</a></li>
+          <li><a href="enquiry.html">玻璃询价</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>联系方式</h4>
+        <ul class="footer-contact">
+          <li>📍 133 Pilkington Road, Panmure, Auckland 1072</li>
+          <li>🕐 每天早上7点 – 晚上11点 · 每周7天</li>
+          <li><a href="tel:0800757985">0800 757-985</a></li>
+          <li><a href="mailto:tiptopautonz@hotmail.com">tiptopautonz@hotmail.com</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span data-year>2025</span> Red Auto Glass（红色汽车玻璃）. 保留所有权利。planned URL: www.redautoglass.co.nz</span>
+      <span>服务大奥克兰地区 · 中文服务热线 0800 757-985</span>
+    </div>
+  </div>
+</footer>
+
+<a href="tel:0800757985" class="float-call">📞 立即拨打</a>
+<script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,9 @@
+{
+  "name": "red-auto-glass",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Red Auto Glass 红色汽车玻璃 — 奥克兰华人汽车玻璃专家（中文网站）",
+  "scripts": {
+    "dev": "node server.js"
+  }
+}
